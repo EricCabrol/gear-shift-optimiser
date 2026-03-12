@@ -6,6 +6,16 @@ https://academy.yourdatadriven.com/courses/racecar-gear-shift-optimisation-calcu
 
 Claude discussion is here (SR) : https://claude.ai/chat/99d8da88-6f03-4837-ad43-13c2b0b9742c
 
+
+# Quick guide
+
+Code is in src/App.tsx
+Run (Powershell) with `npm run dev`
+`o`to open the browser, `q` to quit
+
+
+
+
 # Prompt
 
 Based on https://www.yourdatadriven.com/the-best-rpm-to-shift-gears-in-a-racing-car propose a web tool to implement the same feature. Explain your options before implementation
@@ -59,3 +69,19 @@ Here's your fully interactive **Race Car Gear Shift Optimizer**! It implements t
 **📊 Charts tab** — two charts from the article: Wheel Torque vs Speed (with the gear intersection "frontier") and RPM vs Speed per gear. Vertical dashed lines mark the optimal shift speeds.
 
 Everything recalculates instantly when you change any input. You can swap in your own torque curve, gear ratios, and tyre spec to get personalised shift points for your car.
+
+
+# Install
+
+```bash
+npm create vite@latest my-app -- --template react-ts
+cd my-app
+npm install recharts lucide-react
+```
+Then just replace the contents of src/App.tsx with the artifact code.
+
+Run with 
+```bash
+npm run dev
+```
+Then type o to open the server (http://localhost:5173)
